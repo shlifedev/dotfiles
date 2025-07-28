@@ -1,15 +1,27 @@
-# Chezmoi basic setup .gitignore
+# Chezmoi dotfiles repository .gitignore
 
 # Chezmoi generated files
 .chezmoi.toml
 .chezmoi.yaml
 .chezmoi.json
 
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
 # Temporary files
 *.tmp
 *.temp
 .tmp/
 .temp/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # macOS system files
 .DS_Store
@@ -19,6 +31,15 @@
 .Trashes
 .AppleDouble
 .LSOverride
+
+# Development files
+node_modules/
+.env
+.env.local
+__pycache__/
+*.pyc
+target/
+.pytest_cache/
 
 # Personal files
 secrets/

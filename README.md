@@ -22,28 +22,20 @@ chezmoi apply # 설정 적용
 
 ## 설정
 
-### Shell 설정 파일
+### 개발 환경
 
-- **~/.zshrc**: 기본 zsh 설정 (히스토리, 별칭, 함수)
-- **~/.bashrc**: 기본 bash 설정 (히스토리, 별칭, 함수)
-- **~/.vimrc**: 기본 vim 설정 (편집기 설정, 키 매핑)
-- **~/.gitconfig**: 기본 git 설정 (사용자 정보, 별칭)
+- Shell & CLI: zsh (Oh My Zsh), bash, vim의 핵심 설정 및 커스텀 별칭/함수 포함
+- Git: 사용자 정보, 유용한 별칭, 프로젝트 종류별 전역 .gitignore 설정
+- Languages: Homebrew를 통한 Node.js (nvm), Python (pyenv), Go, Java, Rust, PHP 런타임 및 SDK 설치
 
-### macOS 시스템 설정
+### 설치 애플리케이션
 
-- **키보드**: 빠른 키 반복, 길게 누르기 비활성화
-- **Finder**: 경로 표시줄, 상태 표시줄, 숨김 파일 표시, 폴더 우선 정렬
-- **Dock**: 자동 숨김, 빠른 애니메이션, 최근 앱 숨김
-- **스크린샷**: PNG 형식, 그림자 제거, Screenshots 폴더에 저장
-- **트랙패드**: 탭하여 클릭 활성화
-- **보안**: 화면보호기 해제 시 즉시 암호 요구
-- **에너지**: 디스플레이 15분, 시스템 30분 후 절전
-- **기타**: 자동 수정 기능들 비활성화, 시스템 사운드 비활성화
+- 유틸리티: iTerm2, Stats, AppCleaner, Rectangle, Keka, IINA, FFmpeg
+- 개발 도구: Visual Studio Code, JetBrains Toolbox, Figma, Postman
+- 기타: Slack, Zoom
 
-### 설치되는 앱
+### macOS 최적화
 
-- **iTerm2**: 터미널 앱
-- **Stats**: 시스템 모니터링
-- **AppCleaner**: 앱 완전 삭제
-- **Rectangle**: 윈도우 관리
-- **Keka**: 압축 도구
+- 시스템: 키보드 반복 속도, Dock 반응 속도, 스크린샷 설정 등 생산성 향상을 위한 최적화
+- Finder: 숨김 파일 표시, 경로 막대 활성화 등 개발자 친화적 설정 적용
+- 보안 및 편의성: 화면보호기 암호 즉시 요구, 불필요한 자동 수정 기능 비활성화

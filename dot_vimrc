@@ -1,4 +1,4 @@
-" Basic vim configuration
+" Development-focused vim configuration
 
 " Basic settings
 set nocompatible
@@ -9,9 +9,11 @@ filetype indent on
 
 " Display
 set number
+set relativenumber
 set cursorline
 set wrap
-set scrolloff=5
+set scrolloff=10
+set sidescrolloff=10
 
 " Indentation
 set autoindent
@@ -19,6 +21,7 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set smarttab
 
 " Search
 set incsearch
@@ -35,8 +38,10 @@ set noswapfile
 set wildmenu
 set wildmode=list:longest
 set backspace=indent,eol,start
+set clipboard=unnamed
 set mouse=a
 set encoding=utf-8
+set fileencoding=utf-8
 
 " Status line
 set laststatus=2
@@ -55,11 +60,26 @@ nnoremap <leader>q :q<CR>
 nnoremap <leader>x :x<CR>
 nnoremap <leader>h :nohlsearch<CR>
 
-" Window navigation
+" Window splitting and navigation
+nnoremap <leader>v :vsplit<CR>
+nnoremap <leader>s :split<CR>
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Tab navigation
+nnoremap <leader>t :tabnew<CR>
+nnoremap <leader>n :tabnext<CR>
+nnoremap <leader>p :tabprev<CR>
+
 " Auto commands
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Language-specific settings
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab
+autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType html setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType css setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType json setlocal tabstop=2 shiftwidth=2 expandtab

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Basic macOS system configuration (non-development)
+# Basic macOS system configuration
 
 osascript -e 'tell application "System Preferences" to quit'
 
@@ -8,7 +8,7 @@ sudo -v
 
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-echo "Configuring basic macOS settings..."
+echo "Configuring macOS settings..."
 
 # General UI/UX
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -16,8 +16,6 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
-
-# Disable auto-correct and smart features
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
@@ -49,7 +47,7 @@ mkdir -p "${HOME}/Desktop/Screenshots"
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-# TextEdit (use plain text by default)
+# TextEdit
 defaults write com.apple.TextEdit RichText -int 0
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
@@ -66,12 +64,9 @@ sudo pmset -a sleep 30
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-# Menu bar
-defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  h:mm a"
-
 echo "Restarting affected applications..."
 for app in "Dock" "Finder" "SystemUIServer"; do
     killall "${app}" &> /dev/null
 done
 
-echo "Basic macOS configuration completed."
+echo "macOS configuration completed."
