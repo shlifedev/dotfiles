@@ -1,0 +1,26 @@
+# Chezmoi basic setup .gitignore
+
+# Chezmoi generated files
+.chezmoi.toml
+.chezmoi.yaml
+.chezmoi.json
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Personal files
+secrets/
+private/
+personal/

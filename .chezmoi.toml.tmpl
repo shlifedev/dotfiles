@@ -1,0 +1,10 @@
+{{- $name := promptStringOnce . "name" "Full name" -}}
+{{- $email := promptStringOnce . "email" "Email address" -}}
+
+[data]
+    name = {{ $name | quote }}
+    email = {{ $email | quote }}
+
+[edit]
+    command = "open"
+    args = ["-W", "-n"]

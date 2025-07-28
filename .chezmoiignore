@@ -1,0 +1,10 @@
+README.md
+LICENSE
+.git/**
+.gitignore
+*.log
+*.tmp
+
+.DS_Store
+.AppleDouble
+.LSOverride

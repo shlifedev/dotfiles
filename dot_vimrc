@@ -1,0 +1,65 @@
+" Basic vim configuration
+
+" Basic settings
+set nocompatible
+syntax on
+filetype on
+filetype plugin on
+filetype indent on
+
+" Display
+set number
+set cursorline
+set wrap
+set scrolloff=5
+
+" Indentation
+set autoindent
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" Search
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+
+" Files
+set nobackup
+set nowritebackup
+set noswapfile
+
+" Interface
+set wildmenu
+set wildmode=list:longest
+set backspace=indent,eol,start
+set mouse=a
+set encoding=utf-8
+
+" Status line
+set laststatus=2
+set ruler
+set showcmd
+set showmode
+
+" Colors
+set t_Co=256
+set background=dark
+
+" Key mappings
+let mapleader = " "
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <leader>x :x<CR>
+nnoremap <leader>h :nohlsearch<CR>
+
+" Window navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Auto commands
+autocmd BufWritePre * :%s/\s\+$//e
