@@ -8,8 +8,14 @@ plugins=(
     git
     brew
     macos
+    docker
+    docker-compose
     node
+    npm
     python
+    pip
+    rust
+    golang
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
@@ -62,6 +68,17 @@ alias gd='git diff'
 alias python='python3'
 alias pip='pip3'
 
+# Package manager aliases
+alias bun='bun'
+alias pnpm='pnpm'
+alias uv='uv'
+
+# Docker aliases
+alias d='docker'
+alias dc='docker-compose'
+alias dps='docker ps'
+alias di='docker images'
+
 # Node.js setup (nvm)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -71,6 +88,20 @@ export NVM_DIR="$HOME/.nvm"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# Composer global bin
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+# Go setup
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
+
+# Rust setup
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# Bun setup
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Utility functions
 mkcd() {

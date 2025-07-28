@@ -1,52 +1,11 @@
-# macOS system files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.vim/
-.netrwhist
+# Global gitignore for development projects
 
 # Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Node.js
-node_modules/
-jspm_packages/
-.npm
-.node_repl_history
-
-# Build directories
-dist/
-build/
-out/
-
-# Environment files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Cache directories
-.cache/
-.parcel-cache/
+pnpm-debug.log*
 
 # Temporary files
 *.tmp
@@ -54,20 +13,76 @@ out/
 .tmp/
 .temp/
 
-# Archive files
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+# IDEs and editors
+.idea/
+.idea_modules/
+.vscode/
+.history/
+*.code-workspace
+.fleet/
+.project
+.classpath
+.c9/
+.nova/
+*.launch
+.settings/
+*.sublime-workspace
+*.swp
+*.swo
+*~
 
-# Database files
-*.sqlite
-*.sqlite3
-*.db
+# OS specific files
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Trashes
+.Spotlight-V100
+
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+
+# Cache directories
+.cache/
+.parcel-cache/
+.turbo/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Node.js
+node_modules/
+jspm_packages/
+.npm
+.node_repl_history
+.pnpm-debug.log*
+
+# Build directories
+dist/
+build/
+out/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
 
 # Python
 __pycache__/
@@ -81,17 +96,24 @@ ENV/
 env.bak/
 venv.bak/
 .pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
 
 # Java
 *.class
 *.war
 *.ear
 target/
+.gradle/
+gradle-wrapper.jar
 
 # C/C++
 *.o
 *.a
 *.exe
+*.out
 
 # Go
 *.exe~
@@ -99,7 +121,6 @@ vendor/
 
 # Rust
 target/
-Cargo.lock
 
 # Ruby
 *.gem
@@ -110,8 +131,12 @@ vendor/bundle/
 vendor/
 composer.phar
 
-# Backup files
-*.bak
-*.backup
-*.old
-*.orig
+# AI
+.agentignore
+.aiexclude
+.augmentignore
+.claudeignore
+.clineignore
+.codeiumignore
+.cursorignore
+.geminiignore

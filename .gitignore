@@ -16,32 +16,71 @@ yarn-debug.log*
 .tmp/
 .temp/
 
-# IDE and editor files
-.vscode/
+# IDEs and editors
 .idea/
+.idea_modules/
+.vscode/
+.history/
+*.code-workspace
+.fleet/
+.project
+.classpath
+.c9/
+.nova/
+*.launch
+.settings/
+*.sublime-workspace
 *.swp
 *.swo
 *~
 
-# macOS system files
+# OS specific files
 .DS_Store
 .DS_Store?
-._*
-.Spotlight-V100
-.Trashes
 .AppleDouble
 .LSOverride
+Icon
+._*
+.Trashes
+.Spotlight-V100
+
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
 
 # Development files
 node_modules/
 .env
 .env.local
+.env.development
+.env.production
 __pycache__/
 *.pyc
+*.pyo
 target/
 .pytest_cache/
+dist/
+build/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+.cache/
 
 # Personal files
 secrets/
 private/
 personal/
+
+# AI
+.agentignore
+.aiexclude
+.augmentignore
+.claudeignore
+.clineignore
+.codeiumignore
+.cursorignore
+.geminiignore

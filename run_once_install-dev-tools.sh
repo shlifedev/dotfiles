@@ -32,8 +32,16 @@ brew install rust
 brew install php
 brew install sqlite
 
+echo "Installing package managers..."
+brew install bun
+brew install composer
+brew install uv
+
 echo "Installing development CLI tools..."
 brew install gh
+
+echo "Installing Docker..."
+brew install --cask docker
 
 echo "Installing development applications..."
 brew install --cask visual-studio-code
