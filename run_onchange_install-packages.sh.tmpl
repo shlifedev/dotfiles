@@ -93,3 +93,22 @@ fi
 
 echo "Package installation completed"
 echo "Please restart your terminal to ensure all changes take effect"
+
+
+
+ 
+ 
+### ----- ###
+
+echo "rclone install? (y/n)" 
+read answer 
+# 2ㅅ2
+if [ "$answer" == "y" ]; then 
+  sudo -v; curl https://rclone.org/install.sh | sudo bash
+  echo "https://macfuse.github.io/ 에서 macfuse를 설치 후 세팅하는 과정은 수동으로 필요"
+else
+  echo "Installation aborted."
+fi
+
+
+
