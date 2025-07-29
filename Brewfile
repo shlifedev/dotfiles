@@ -34,7 +34,6 @@ brew "yarn"
 # AI Tools
 brew "gemini-cli"
 cask "claude"
-cask "claude-code"
 
 # System Apps
 cask "appcleaner"

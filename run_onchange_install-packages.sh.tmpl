@@ -34,7 +34,41 @@ brew update
 
 # Install packages using Brewfile
 echo "Installing packages from Brewfile..."
-brew bundle --file={{ .chezmoi.sourceDir }}/Brewfile
+
+# Check if expect is available, install if not
+if ! command -v expect &> /dev/null; then
+    echo "Installing expect for automated password input..."
+    brew install expect
+fi
+
+# Create expect script for automated password input
+cat > /tmp/brew_install.exp << 'EOF'
+#!/usr/bin/expect -f
+set timeout -1
+set password "{{ .sudoPassword }}"
+
+spawn brew bundle --file={{ .chezmoi.sourceDir }}/Brewfile
+
+expect {
+    "Password:" {
+        send "$password\r"
+        exp_continue
+    }
+    "password for" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}
+EOF
+
+chmod +x /tmp/brew_install.exp
+
+# Run the installation with expect
+/tmp/brew_install.exp
+
+# Clean up
+rm -f /tmp/brew_install.exp
 
 # Install Oh My Zsh if not present
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
