@@ -1,9 +1,5 @@
 # Brewfile for macOS package management
 
-# Taps
-tap "homebrew/bundle"
-tap "homebrew/cask"
-
 # CLI Tools
 brew "awscli"
 brew "bash"
@@ -30,16 +26,15 @@ brew "rust"
 brew "sqlite"
 
 # Package Managers
-brew "bun"
 brew "composer"
 brew "npm"
 brew "uv"
 brew "yarn"
 
 # AI Tools
-brew "claude-code"
 brew "gemini-cli"
 cask "claude"
+cask "claude-code"
 
 # System Apps
 cask "appcleaner"
@@ -56,6 +51,7 @@ cask "postman"
 cask "visual-studio-code"
 
 # Other Apps
+cask "google-chrome"
 cask "iina"
 cask "slack"
 cask "zoom"
