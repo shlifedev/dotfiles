@@ -27,8 +27,23 @@ check_app() {
 }
 
 echo "Checking command line tools..."
+echo "Checking Xcode Command Line Tools..."
+if xcode-select -p &> /dev/null; then
+    echo "✅ Xcode Command Line Tools are installed"
+else
+    echo "❌ Xcode Command Line Tools are NOT installed"
+fi
+
+echo ""
 check_command "brew"
 check_command "git"
+check_command "git-lfs"
+check_command "gpg"
+check_command "pkg-config"
+check_command "vim"
+check_command "bash"
+check_command "zsh"
+check_command "grep"
 check_command "node"
 check_command "npm"
 check_command "bun"
