@@ -12,7 +12,7 @@ brew "grep"
 brew "pkg-config"
 brew "tree"
 brew "vim"
-brew "wget"
+brew "wget" 
 brew "zsh"
 
 # Programming Languages
@@ -34,6 +34,7 @@ brew "yarn"
 # AI Tools
 brew "gemini-cli"
 cask "claude"
+cask "claude-code"
 
 # System Apps
 cask "appcleaner"
@@ -54,3 +55,23 @@ cask "google-chrome"
 cask "iina"
 cask "slack"
 cask "zoom"
+
+
+
+# Video&Audio
+brew "ffmpeg"
+brew "yt-dlp"
+cask "audacity"
+
+# Kbd
+cask "karabiner-elements"
+
+# GameDevs
+cask "unity-hub" 
+cask "godot"
+cask "steam"
+
+# Others 
+brew "tldr" 
+brew "htop"
+brew "zip" 
