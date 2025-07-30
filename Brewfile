@@ -75,3 +75,7 @@ cask "steam"
 brew "tldr" 
 brew "htop"
 brew "zip" 
+
+
+
+cask "todoist"
