@@ -69,7 +69,6 @@ alias python='python3'
 alias pip='pip3'
 
 # Package manager aliases
-alias bun='bun'
 alias pnpm='pnpm'
 alias uv='uv'
 
@@ -79,10 +78,6 @@ alias dc='docker-compose'
 alias dps='docker ps'
 alias di='docker images'
 
-# Node.js setup (nvm)
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # Python setup (pyenv)
 if command -v pyenv 1>/dev/null 2>&1; then
@@ -99,9 +94,6 @@ export PATH="$GOPATH/bin:$PATH"
 # Rust setup
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# Bun setup
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Utility functions
 mkcd() {
