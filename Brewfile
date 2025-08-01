@@ -16,7 +16,7 @@ brew "vim"
 brew "wget"
 brew "zsh"
 
-# Programming Languages
+# Programming #1
 brew "dotnet"
 brew "go"
 brew "node"
@@ -24,11 +24,12 @@ brew "openjdk"
 brew "php"
 brew "python"
 brew "rust"
-brew "sqlite"
 
-# Package Managers
+# Programming #2
 brew "composer"
+brew "kotlin"
 brew "npm"
+brew "sqlite"
 brew "uv"
 brew "yarn"
 
