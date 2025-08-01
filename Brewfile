@@ -10,6 +10,7 @@ brew "git-lfs"
 brew "gnupg"
 brew "grep"
 brew "pkg-config"
+brew "tmux"
 brew "tree"
 brew "vim"
 brew "wget"
@@ -34,6 +35,7 @@ brew "yarn"
 # AI Tools
 brew "gemini-cli"
 cask "claude"
+brew "claude-squad"
 
 # System Apps
 cask "appcleaner"

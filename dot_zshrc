@@ -94,6 +94,12 @@ export PATH="$GOPATH/bin:$PATH"
 # Rust setup
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# Bun (JavaScript runtime and package manager)
+export PATH="$HOME/.bun/bin:$PATH"
+
+# Claudia (GUI for Claude Code)
+alias claudia-dev="cd ~/claudia && bun run tauri dev"
+alias claudia-build="cd ~/claudia && bun run tauri build"
 
 # Utility functions
 mkcd() {
