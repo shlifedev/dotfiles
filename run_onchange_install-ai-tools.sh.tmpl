@@ -26,9 +26,12 @@ else
     echo "Auggie already installed"
 fi
 
-# Clone and setup SuperClaude Framework
+# Install Claude CLI and SuperClaude Framework
 SUPERCLAUDE_DIR="$HOME/SuperClaude"
 if [ ! -d "$SUPERCLAUDE_DIR" ]; then
+    echo "Installing Claude CLI..."
+    curl -fsSL https://claude.ai/install.sh | bash
+
     echo "Installing SuperClaude Framework dependencies..."
     git clone https://github.com/SuperClaude-Org/SuperClaude_Framework.git "$SUPERCLAUDE_DIR"
     cd "$SUPERCLAUDE_DIR"
@@ -53,7 +56,7 @@ else
     echo -e "y\ny" | python3 -m SuperClaude install --profile developer
 fi
 
-# Clone and setup Claudia (GUI for Claude Code)
+# Install Claudia
 CLAUDIA_DIR="$HOME/claudia"
 if [ ! -d "$CLAUDIA_DIR" ]; then
     echo "Cloning Claudia repository..."
