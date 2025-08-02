@@ -17,11 +17,13 @@ else
     echo "Bun already installed"
 fi
 
-# Verify bun installation
-if command -v bun &> /dev/null; then
-    echo "Bun version: $(bun --version)"
+# Install Augment AI tool (auggie)
+if ! command -v auggie &> /dev/null; then
+    echo "Installing Augment AI tool (auggie)..."
+    npm install -g @augmentcode/auggie
+    echo "Auggie installed successfully"
 else
-    echo "Warning: Bun installation may have failed"
+    echo "Auggie already installed"
 fi
 
 # Clone and setup SuperClaude Framework
