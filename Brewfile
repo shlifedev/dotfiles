@@ -35,25 +35,27 @@ brew "yarn"
 
 # AI Tools
 brew "gemini-cli"
+cask "cursor"
 cask "claude"
 brew "claude-squad"
-
-# System Apps
-cask "appcleaner"
-cask "iterm2"
-cask "keka"
-cask "rectangle"
-cask "stats"
+cask "windsurf"
 
 # Development Apps
 cask "docker"
 cask "figma"
+cask "github"
 cask "jetbrains-toolbox"
 cask "postman"
+cask "proxyman"
 cask "visual-studio-code"
 
 # Other Apps
+cask "appcleaner"
 cask "google-chrome"
 cask "iina"
+cask "iterm2"
+cask "keka"
+cask "rectangle"
 cask "slack"
+cask "stats"
 cask "zoom"
