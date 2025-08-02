@@ -1,6 +1,6 @@
 # Brewfile for macOS package management
 
-# CLI Tools
+# System
 brew "awscli"
 brew "bash"
 brew "curl"
@@ -10,12 +10,14 @@ brew "git-lfs"
 brew "gnupg"
 brew "grep"
 brew "pkg-config"
+brew "rbenv"
+brew "tmux"
 brew "tree"
 brew "vim"
 brew "wget"
 brew "zsh"
 
-# Programming Languages
+# Programming #1
 brew "dotnet"
 brew "go"
 brew "node"
@@ -23,34 +25,41 @@ brew "openjdk"
 brew "php"
 brew "python"
 brew "rust"
-brew "sqlite"
 
-# Package Managers
+# Programming #2
 brew "composer"
+brew "kotlin"
 brew "npm"
+brew "sqlite"
 brew "uv"
+brew "watchman"
 brew "yarn"
 
 # AI Tools
 brew "gemini-cli"
+cask "cursor"
 cask "claude"
-
-# System Apps
-cask "appcleaner"
-cask "iterm2"
-cask "keka"
-cask "rectangle"
-cask "stats"
+brew "claude-squad"
+cask "windsurf"
 
 # Development Apps
+cask "android-studio"
 cask "docker"
 cask "figma"
+cask "flutter"
+cask "github"
 cask "jetbrains-toolbox"
 cask "postman"
+cask "proxyman"
 cask "visual-studio-code"
 
 # Other Apps
+cask "appcleaner"
 cask "google-chrome"
 cask "iina"
+cask "iterm2"
+cask "keka"
+cask "rectangle"
 cask "slack"
+cask "stats"
 cask "zoom"

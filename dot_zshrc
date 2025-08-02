@@ -56,7 +56,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-# Git aliases
+# Git
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
@@ -64,36 +64,42 @@ alias gp='git push'
 alias gl='git log --oneline'
 alias gd='git diff'
 
-# Development aliases
-alias python='python3'
-alias pip='pip3'
-
-# Package manager aliases
-alias pnpm='pnpm'
-alias uv='uv'
-
-# Docker aliases
+# Docker
 alias d='docker'
 alias dc='docker-compose'
 alias dps='docker ps'
 alias di='docker images'
 
+# Python
+alias python='python3'
+alias pip='pip3'
 
-# Python setup (pyenv)
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-# Composer global bin
+# Composer
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
-# Go setup
+# Go
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 
-# Rust setup
+# Rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# Bun (JavaScript runtime and package manager)
+export PATH="$HOME/.bun/bin:$PATH"
+
+# Claudia (GUI for Claude Code)
+alias claudia-dev="cd ~/claudia && bun run tauri dev"
+alias claudia-build="cd ~/claudia && bun run tauri build"
+
+# Vibe Kanban
+alias vkb='npx vibe-kanban'
+
+# n8n
+alias n8n='npx n8n'
 
 # Utility functions
 mkcd() {
