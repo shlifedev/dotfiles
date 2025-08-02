@@ -1,6 +1,6 @@
 # Brewfile for macOS package management
 
-# CLI Tools
+# System
 brew "awscli"
 brew "bash"
 brew "curl"
@@ -10,6 +10,7 @@ brew "git-lfs"
 brew "gnupg"
 brew "grep"
 brew "pkg-config"
+brew "rbenv"
 brew "tmux"
 brew "tree"
 brew "vim"
@@ -31,6 +32,7 @@ brew "kotlin"
 brew "npm"
 brew "sqlite"
 brew "uv"
+brew "watchman"
 brew "yarn"
 
 # AI Tools
@@ -41,8 +43,10 @@ brew "claude-squad"
 cask "windsurf"
 
 # Development Apps
+cask "android-studio"
 cask "docker"
 cask "figma"
+cask "flutter"
 cask "github"
 cask "jetbrains-toolbox"
 cask "postman"
