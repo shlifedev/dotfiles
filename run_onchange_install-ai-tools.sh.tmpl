@@ -37,7 +37,7 @@ if [ ! -d "$SUPERCLAUDE_DIR" ]; then
     echo "Installing SuperClaude with developer profile..."
     mkdir -p ~/.claude
     touch ~/.claude/CLAUDE.md
-    echo -e "y\ny" | python3 -m SuperClaude install --profile developer
+    python3 -m SuperClaude install --profile developer --yes
 
     echo "SuperClaude Framework setup completed"
 else
