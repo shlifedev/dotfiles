@@ -43,7 +43,7 @@ check_command "claude-squad"
 check_command "composer"
 check_command "curl"
 check_command "dotnet"
-check_command "gemini-cli"
+check_command "gemini" # gemini-cli
 check_command "gh"
 check_command "git"
 check_command "git-lfs"
