@@ -1,18 +1,14 @@
 # Brewfile for macOS package management
 
 # System
-brew "awscli"
 brew "bash"
 brew "curl"
 brew "gh"
-brew "git"
-brew "git-lfs"
 brew "gnupg"
 brew "grep"
 brew "pkg-config"
 brew "tmux"
 brew "tree"
-brew "vim"
 brew "wget"
 brew "zsh"
 
@@ -27,13 +23,18 @@ brew "ruby"
 brew "rust"
 
 # Programming #2
+brew "awscli"
 brew "composer"
+brew "git"
+brew "git-lfs"
 brew "kotlin"
 brew "npm"
 brew "rbenv"
 brew "sqlite"
 brew "uv"
+brew "vim"
 brew "watchman"
+brew "xcodes"
 brew "yarn"
 
 # AI Tools
