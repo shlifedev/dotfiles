@@ -43,7 +43,6 @@ cask "cursor"
 cask "claude"
 brew "claude-squad"
 brew "ollama"
-cask "ollama-app"
 cask "windsurf"
 
 # Development Apps
