@@ -1,0 +1,24 @@
+#!/bin/bash
+
+set -e
+
+echo "04. Cloning and updating GitHub repositories..."
+
+# Create repos directory
+mkdir -p "$HOME/Documents/GitHub"
+cd "$HOME/Documents/GitHub"
+
+# Get repo list and clone/update
+gh repo list {{ .name }} --public | while read -r repo _; do
+    if [ -d "$repo" ]; then
+        echo "Updating $repo..."
+        cd "$repo"
+        git pull
+        cd ..
+    else
+        echo "Cloning $repo..."
+        gh repo clone "$repo"
+    fi
+done
+
+echo "Done!"
