@@ -25,6 +25,7 @@ brew "rust"
 # Programming #2
 brew "awscli"
 brew "composer"
+brew "gcloud-cli"
 brew "git"
 brew "git-lfs"
 brew "kotlin"
@@ -46,15 +47,23 @@ brew "ollama"
 cask "windsurf"
 
 # Development Apps
-cask "android-studio"
 cask "docker"
 cask "figma"
 cask "flutter"
 cask "github"
-cask "jetbrains-toolbox"
 cask "postman"
 cask "proxyman"
 cask "visual-studio-code"
+
+# Jetbrains
+cask "jetbrains-toolbox"
+cask "android-studio"
+cask "intellij-idea"
+cask "pycharm"
+cask "goland"
+cask "webstorm"
+cask "phpstorm"
+cask "datagrip"
 
 # Other Apps
 cask "appcleaner"
