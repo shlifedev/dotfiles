@@ -1,0 +1,10 @@
+[user]
+	email = shlifedev@gmail.com
+	name = shlifedev
+    
+[includeIf "gitdir:/Users/shlifedev/@src/percent/"]
+    path = ~/.gitconfig-percent
+
+[includeIf "gitdir:/Users/shlifedev/@src/shlifedev/"]
+    path = ~/.gitconfig-shlifedev
+    
